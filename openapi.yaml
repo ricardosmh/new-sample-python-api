@@ -1,0 +1,19 @@
+openapi: 3.0.2
+info:
+  title: Sample Python API
+  version: 1.0.0
+paths:
+  /:
+    get:
+      summary: Read Root
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  Hello:
+                    type: string
+                    example: World
